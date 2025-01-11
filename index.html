@@ -18,123 +18,67 @@
 
   <div class="contener">
     <header>
-      <img src="assets/icones/Logo.svg" alt="">
+      <img src="assets/Logo.svg" alt="">
     </header>
 
     <main>
       <div class="request">
         <h1>Solicitação de reembolso</h1>
-        <p>Informe os dados da despesa para solicitar reembolso. 
+        <p>Informe os dados da despesa para solicitar reembolso.
           A despesa será analisada e reembolsada em até 30 dias.</p>
 
-          <form >
-            <label for="titulo" >título da despesa</label>
-            <input type="text" name="titulo"   id="titulo" required>
-            <div class="tex-info">
-                <div class="whaper">
-                  <label for="categoria" >Categoria</label>
-                  <select name="categoria" id="categoria" required>
-                    <option value="" selected disabled>Selecione</option>
-                    <option value="1">Alimentação</option>
-                    <option value="2">Hospedagem</option>
-                    <option value="3">Transporte</option>
-                    <option value="4">Serviços</option>
-                    <option value="5">Outros</option>
-                  </select>
-                </div>
-                <div class="whaper">
-                  <label for="valor">Valor</label>
-                  <input type="number" name="valor" placeholder="0,00" required>
-                </div>
-              </div>
-            <button>Adicionar despesa</button>
-          </form>
+        <form>
+          <label for="titulo">título da despesa</label>
+          <input type="text" name="titulo" id="titulo" required>
+          <div class="tex-info">
+            <div class="whaper">
+              <label for="categoria">Categoria</label>
+              <select name="categoria" id="categoria" required>
+                <option value="" selected disabled>Selecione</option>
+                <option value="food">Alimentação</option>
+                <option value="hotel">Hospedagem</option>
+                <option value="taxi">Transporte</option>
+                <option value="serviço">Serviços</option>
+                <option value="outros">Outros</option>
+              </select>
+            </div>
+            <div class="whaper">
+              <label for="valor">Valor</label>
+              <input type="text" name="valor" id="valor" placeholder="R$ 0,00" required>
+            </div>
+          </div>
+          <button>Adicionar despesa</button>
+        </form>
       </div>
       <div class="cont-direito">
         <header>
           <h3>Minhas solicitações</h3>
-          <p>÷</p> 
-          <p>6 despesas</p>
-          <span class="valor">R$
-            1.420,57</span>
+          
+          <p>0 despesa</p>
+          <span class="valortotal"><small>R$</small>
+            0</span>
         </header>
         <ul>
-          <li><img src="assets/icones/Icon-al.svg" alt="">
+          <!-- exemplo de lista
+           <li><img src="assets/icones/Icon-al.svg" alt="">
           <div class="title">
             <h4>Almoço</h4>
             <p>Alimentação</p>
           </div>
-          <span>R$
-            34,78</span>
+          <span class="total"> <small>R$</small>34,78</span>
+            
 
             <div class="remove"><img src="assets/icones/Remove Button.svg" alt=""></div>
-          </li>
+          </li> -->
+
+         
 
 
-          <li><img src="assets/icones/Icon-hotel.svg" alt="">
-          <div class="title">
-            <h4>Hotel</h4>
-            <p>Hospedagem</p>
-          </div>
-          <span>
-            R$ 1.200,00
-           </span>
-           <div class="remove">
-            <img src="assets/icones/Remove Button.svg" alt="">
-           </div>
-
-          </li>
-
-
-          <li><img src="assets/icones/Icon-lanche.svg" alt="">
-            <div class="title">
-              <h4>Lanche</h4>
-              <p>Alimentação</p>
-            </div>
-            <span>R$ 12,35</span>
-            <div class="remove">
-              <img src="assets/icones/Remove Button.svg" alt="">
-            </div>
-          </li>
-
-
-          <li><img src="assets/icones/Icon-taxi.svg" alt="">
-            <div class="title">
-              <h4>Taxi</h4> 
-              <p>Transporte</p>
-            </div>
-            <span>R$47,65</span>
-            <div class="remove">
-              <img src="assets/icones/Remove Button.svg" alt="">
-            </div>
-          </li>
-
-          <li><img src="assets/icones/Icon-serviço.svg" alt="">
-            <div class="title">
-              <h4>Internet</h4>
-              <p>Serviços</p>
-            </div>
-            <span>R$99,90</span>  
-            <div class="remove">
-              <img src="assets/icones/Remove Button.svg" alt="">
-            </div>
-          </li>
-          <li><img src="assets/icones/Icon-outros.svg" alt="">
-            <div class="title">
-              <h4>Ebook</h4>
-              <p>Outros</p>
-            </div>
-            <span>R$25,89</span>
-            <div class="remove">
-              <img src="assets/icones/Remove Button.svg" alt="">
-            </div>
-          </li>
-
-          
         </ul>
       </div>
     </main>
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
